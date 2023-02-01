@@ -90,7 +90,7 @@ if __name__ == "__main__":
     # https://superuser.com/questions/66825/what-is-the-difference-between-size-and-size-on-disk
     # print(output)
     with open("db.json", "w") as f:
-        json.dump(output, f, ensure_ascii=False, indent=4)
+        json.dump({"en": output}, f, ensure_ascii=False, indent=4)
 
     print(f"Size: {humanize.naturalsize(os.path.getsize('db.json'))}")
     print("All done!")
