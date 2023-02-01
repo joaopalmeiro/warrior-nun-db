@@ -30,7 +30,8 @@ isort --profile black script.py && black script.py
 
 - https://github.com/celiao/tmdbsimple
 - `pipenv --python 3.7`
-- `pipenv install requests humanize && pipenv install --dev black isort`
+- `pipenv install httpx humanize && pipenv install --dev black isort`
+- `exit && pipenv --rm` (https://github.com/pypa/pipenv/issues/4942)
 - https://docs.pipenv.org/advanced/#automatic-loading-of-env
 - https://bible-api.com/
 - https://www.themoviedb.org/documentation/api
