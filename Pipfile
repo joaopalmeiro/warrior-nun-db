@@ -10,6 +10,7 @@ humanize = "*"
 [dev-packages]
 black = "*"
 isort = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.7"

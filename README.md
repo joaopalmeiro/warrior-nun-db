@@ -26,11 +26,15 @@ python script.py
 isort --profile black script.py && black script.py
 ```
 
+```bash
+mypy script.py
+```
+
 ## Notes
 
 - https://github.com/celiao/tmdbsimple
 - `pipenv --python 3.7`
-- `pipenv install httpx humanize && pipenv install --dev black isort`
+- `pipenv install httpx humanize && pipenv install --dev black isort mypy`
 - `exit && pipenv --rm` (https://github.com/pypa/pipenv/issues/4942)
 - https://docs.pipenv.org/advanced/#automatic-loading-of-env
 - https://bible-api.com/
@@ -39,3 +43,4 @@ isort --profile black script.py && black script.py
 - https://en.wikipedia.org/wiki/Bible_in_Basic_English
 - https://www.themoviedb.org/documentation/api
 - https://my-json-server.typicode.com/
+- https://mypy.readthedocs.io/en/stable/
