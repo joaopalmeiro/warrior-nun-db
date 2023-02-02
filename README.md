@@ -34,5 +34,8 @@ isort --profile black script.py && black script.py
 - `exit && pipenv --rm` (https://github.com/pypa/pipenv/issues/4942)
 - https://docs.pipenv.org/advanced/#automatic-loading-of-env
 - https://bible-api.com/
+- https://en.wikipedia.org/wiki/World_English_Bible
+- https://en.wikipedia.org/wiki/Open_English_Bible
+- https://en.wikipedia.org/wiki/Bible_in_Basic_English
 - https://www.themoviedb.org/documentation/api
 - https://my-json-server.typicode.com/

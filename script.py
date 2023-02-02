@@ -44,7 +44,7 @@ async def get_episode_output(
 ) -> Dict[str, Union[str, int, None]]:
     # https://stackoverflow.com/questions/39429526/how-to-specify-nullable-return-type-with-type-hints
     url = f"{BIBLE_API_BASE_URL}/{process_verse(verse)}"
-    r = await client.get(url, params={"translation": "web"})
+    r = await client.get(url, params={"translation": BIBLE_TRANSLATION})
     data = r.json()
 
     # print(type(episode), type(season))
@@ -97,6 +97,11 @@ BASE_PARAMS: Dict[str, str] = {"api_key": os.environ["TMDB_API_KEY"]}
 # PARAMS: Dict[str, str] = {**BASE_PARAMS, "language": "pt-PT"}
 
 BIBLE_API_BASE_URL: str = "https://bible-api.com"
+BIBLE_TRANSLATION: str = "web"
+# BIBLE_TRANSLATION: str = "bbe"
+# BIBLE_TRANSLATION: str = "kjv"
+# BIBLE_TRANSLATION: str = "oeb-us"
+# BIBLE_TRANSLATION: str = "webbe"
 
 
 async def main() -> None:
