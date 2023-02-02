@@ -30,11 +30,15 @@ isort --profile black script.py && black script.py
 mypy script.py
 ```
 
+```bash
+ruff script.py
+```
+
 ## Notes
 
 - https://github.com/celiao/tmdbsimple
 - `pipenv --python 3.7`
-- `pipenv install httpx humanize && pipenv install --dev black isort mypy`
+- `pipenv install httpx humanize && pipenv install --dev black isort mypy ruff`
 - `exit && pipenv --rm` (https://github.com/pypa/pipenv/issues/4942)
 - https://docs.pipenv.org/advanced/#automatic-loading-of-env
 - https://bible-api.com/
@@ -44,3 +48,4 @@ mypy script.py
 - https://www.themoviedb.org/documentation/api
 - https://my-json-server.typicode.com/
 - https://mypy.readthedocs.io/en/stable/
+- https://github.com/charliermarsh/ruff#pandas-vet-pd

@@ -1,0 +1,57 @@
+# https://github.com/charliermarsh/ruff#configuration
+# https://github.com/charliermarsh/ruff#vs-code-official
+# https://github.com/charliermarsh/ruff#does-ruff-support-jupyter-notebooks
+
+# https://github.com/charliermarsh/ruff#supported-rules
+# F: https://github.com/charliermarsh/ruff#pyflakes-f
+# E: https://github.com/charliermarsh/ruff#pycodestyle-e-w
+# N: https://github.com/charliermarsh/ruff#pep8-naming-n
+# ANN:
+# - https://pypi.org/project/flake8-annotations/
+# - https://github.com/charliermarsh/ruff#flake8-annotations-ann
+# S: https://github.com/charliermarsh/ruff#flake8-bandit-s
+# BLE:
+# - https://pypi.org/project/flake8-blind-except/
+# - https://github.com/charliermarsh/ruff#flake8-blind-except-ble
+# B: https://github.com/charliermarsh/ruff#flake8-bugbear-b
+# A: https://github.com/charliermarsh/ruff#flake8-builtins-a
+# C4: https://github.com/charliermarsh/ruff#flake8-comprehensions-c4
+# DTZ: https://github.com/charliermarsh/ruff#flake8-datetimez-dtz
+# EM:
+# - https://pypi.org/project/flake8-errmsg/
+# - https://github.com/charliermarsh/ruff#flake8-errmsg-em
+# PIE: https://github.com/charliermarsh/ruff#flake8-pie-pie
+# SIM: https://github.com/charliermarsh/ruff#flake8-simplify-sim
+# ARG: https://github.com/charliermarsh/ruff#flake8-unused-arguments-arg
+# PLC, PLE, PLR: https://github.com/charliermarsh/ruff#pylint-pl
+# TRY: https://github.com/charliermarsh/ruff#tryceratops-try
+# RUF: https://github.com/charliermarsh/ruff#ruff-specific-rules-ruf
+
+[tool.ruff]
+# https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html#line-length
+# https://github.com/charliermarsh/ruff#line-length
+line-length = 88
+# https://github.com/charliermarsh/ruff#target-version
+target-version = "py37"
+
+select = [
+    "F",
+    "E",
+    "N",
+    "ANN",
+    "S",
+    "BLE",
+    "B",
+    "A",
+    "C4",
+    "DTZ",
+    "EM",
+    "PIE",
+    "SIM",
+    "ARG",
+    "PLC",
+    "PLE",
+    "PLR",
+    "TRY",
+    "RUF",
+]
